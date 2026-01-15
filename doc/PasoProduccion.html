@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>PASO A PRODUCCI&Oacute;N DE APLICACI&Oacute;N FINAL</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="paso-a-producción-de-aplicación-final">PASO A PRODUCCIÓN DE APLICACIÓN FINAL</h1>
+<ul>
+<li><a href="#paso-a-producci%C3%B3n-de-aplicaci%C3%B3n-final">PASO A PRODUCCIÓN DE APLICACIÓN FINAL</a>
+<ul>
+<li><a href="#publicar-desde-github"><strong>Publicar desde GitHub</strong></a></li>
+<li><a href="#subir-versi%C3%B3n-estable-en-github"><strong>Subir versión estable en github</strong></a></li>
+<li><a href="#bases-de-datos"><strong>Bases de datos</strong></a></li>
+<li><a href="#archivo-de-configuracion-de-conexi%C3%B3n-a-bbdd"><strong>Archivo de configuracion de conexión a BBDD</strong></a></li>
+<li><a href="#fichero-htaccess"><strong>Fichero .htaccess</strong></a></li>
+</ul>
+</li>
+</ul>
+<h2 id="publicar-desde-github"><h2><strong>Publicar desde GitHub</strong></h2></h2>
+<p>Lo primero es tener abierto nuestro repositorio en github porque vamos a copiar y configurar cosas.</p>
+<p>En plesk vamos a sitios web y dominios, entramos nuestro dominio principal y damos al icono de git.</p>
+<p>En github copiamos la url de ssh.</p>
+<p>En plesk añadimos repositorio, al pegar la url de github nos sale una sección para crear clave ssh pública, tenemos que crear una para cada repositorio, copiamos esa clave y vamos a github a las opciones de nuestro repostorio a deply keys. Una vez aquí añadimos una nueva clave pegando la que hemos copiado de plesk, poniendo un nombre significativo y dejando <em>Allow write access</em> desmarcado.</p>
+<p>Volvemos a plesk, modificamos el nombre del repositorio como queramos, nos aseguramos que el modo despliegue esta en automático. En ruta de acceso elegimos la carpeta de nuestro proyecto (si no la tenemos la creamos pero es recomendable que esté vacia) dentro de httpdocs.</p>
+<p>Ya podemos dar a crear, esto clonará el repositorio de github a plesk.</p>
+<p>Si no ha habido errores volvemos a git en plesk y damos a configuración del repositorio en la tarjeta de nuestro proyecto (icono del medio abajo a la derecha). Al abrir vemos que hay un nuevo enlace, el url de webhook, el cual copiamos y vamos a github.</p>
+<p>En github entramos en settings/webhooks y damos a añadir webhook. Pegamos el url pero le añadimos plesk. al principio del dominio, elegimos application/json en content type, nos aseguramos que está marcada la opcion <em>Just the push event</em> y damos a añadir.</p>
+<p>Con todo esto cada vez que hagamos push a la rama principal se subirá automáticamente a plesk.</p>
+<h2 id="subir-versión-estable-en-github"><h2><strong>Subir versión estable en github</strong></h2></h2>
+<p>Descargamos el proyecto comprimido en zip desde la sección de releases de github que previamente vamos haciendo con versiones estables de nuestro proyecto.</p>
+<p>Lo descomprimimos en nuestro pc y lo subimos al servidor por ftp, si es necesario borramos o modificamos archivos de configuración o lo que sea antes de subirlo.</p>
+<h2 id="bases-de-datos"><h2><strong>Bases de datos</strong></h2></h2>
+<p>Para trabajar con bases de datos lo hacemos en dos pasos, el primero será desde plesk donde crearemos la BBDD asociada a un dominio o proyecto y también crearemos el usuario para gestionarla. El segundo será desde phpMyAdmin donde ejecutaremos codigos sql para crear tablas, hacer carga inicial y borrarlas.</p>
+<p><strong><h3>En plesk</h3></strong>
+En <em>sitios web y dominios</em> damos a <em>Bases de datos</em> y <em>añadir base de datos</em>.</p>
+<p>En la ventana que se abre elegimos el nombre de la BBDD, el sitio relacionado (este será un subdominio asociado a un proyecto que tenemos previamnete creado) y creamos un usuario con su contraseña.</p>
+<p>Una vez que le damos a crear ya nos aparece la opcion de abrir phpMyAdmin.</p>
+<p><strong><h3>En phpMyAdmin</h3></strong>
+Aqui gestionamos únicamente la bbdd que creamos antes, no podemos ver todas las que hay en plesk.</p>
+<p>Nos vamos a la pestaña SQL, copiamos o escribimos el código a ejecutar y antes de darle a continuar en la parte de abajo Guardamos esta consulta en favoritos poniéndole un nombre.</p>
+<p>Al hacer ésto aparece una nueva sección abajo <em>Consulta guardada en favoritos</em> donde tenemos una lista desplegable con todas las que guardemos para poder seleccionarla en cualquier momento y darla a continuar abajo a la derecha para volver a ejecutarla.</p>
+<h2 id="archivo-de-configuracion-de-conexión-a-bbdd"><h2><strong>Archivo de configuracion de conexión a BBDD</strong></h2></h2>
+<p>Lo primero es crear unas variables de entorno con los datos de la conexión en el archivo .htaccess del proyecto donde sea necesario.</p>
+<pre><code class="language-Bash">SetEnv DB_DSN <span class="hljs-string">&quot;mysql:host=localhost; dbname=DBGJLDWESProyectoTema4&quot;</span>
+SetEnv DB_USERNAME <span class="hljs-string">&quot;userGJLDWESProyectoTema4&quot;</span>
+SetEnv DB_PASSWORD <span class="hljs-string">&quot;5813Libro-Puro&quot;</span>
+</code></pre>
+<p>El objetivo con todo esto es que el archivo de configuración en explotación (rama master) no tenga la contraseñas, usuarios ni datos de la bbdd, a diferencia del entorno de explotación (rama developerGJL) que sí los tiene. Como el resto del código php es el mismo en los dos entornos, usa el mismo archivo (confDBPDO.php).</p>
+<p>Antes de empezar guarda una copia de seguridad por si hay que volver a restaurar los archivos.</p>
+<p>Lo primero es añadirlo al archivo .gitignore (lo hacemos todo desde developerGJL y luego ya fusionamos con master).</p>
+<pre><code class="language-Bash">conf/confDBPDO.php
+</code></pre>
+<p>Después lo borramos del seguimiento de git (si quieremos asegurarnos más podemos borrarlo por completo sin usar --cached y luego volver a crearlo al final).</p>
+<pre><code class="language-Bash">git <span class="hljs-built_in">rm</span> --cached conf/confDBPDO.php
+</code></pre>
+<p>En este punto ya no debería estar el archivo en github en ninguna rama, ahora tenemos que crearlo o modificarlo con los datos de conexión del entorno de desarrollo y hacer otra versión para subirla manualmente al entorno de explotación.</p>
+<h2 id="fichero-htaccess"><h2><strong>Fichero .htaccess</strong></h2></h2>
+<pre><code class="language-Bash">
+<span class="hljs-comment"># Redirección de errores a paginas personalizadas en carpeta error de raiz del dominio/subdominio</span>
+ErrorDocument 404 /error/404.html
+ErrorDocument 403 /error/403.html
+ErrorDocument 500 /error/500.html
+</code></pre>
+
+            
+            
+        </body>
+        </html>

@@ -32,25 +32,97 @@
                 <article class="practica">
                     <iframe src="doc/Glosario.pdf"></iframe>
                     <a href="doc/Glosario.pdf" target="_blank">
-                        <img src="webroot/media/images/ies.png" alt="Banner">
+                        <div class="tituloPractica">
+                            <p>Tema 1</p>
+                            <p>Ciberseguridad</p>
+                            <p>Ejercicio 1.1</p>
+                        </div>
                         <div class="superpuesto"></div>
-                        <h4>UD1. Glosario</h4>
+                        <h4>Glosario</h4>
+                    </a>
+                </article>
+                <article class="practica">
+                    <iframe src="doc/1.2 OWASP.pdf"></iframe>
+                    <a href="doc/1.2 OWASP.pdf" target="_blank">
+                        <div class="tituloPractica">
+                            <p>Tema 1</p>
+                            <p>Ciberseguridad</p>
+                            <p>Ejercicio 1.2</p>
+                        </div>
+                        <div class="superpuesto"></div>
+                        <h4>OWASP</h4>
                     </a>
                 </article>
                 <article class="practica">
                     <iframe src="doc/README.html"></iframe>
                     <a href="https://github.com/GonJunLor/GJLDAWProyectoDAW/blob/master/README.md" target="_blank">
-                        <img src="webroot/media/images/ies.png" alt="Banner">
+                        <div class="tituloPractica">
+                            <p>Tema 2</p>
+                            <p>Servidor web seguro</p>
+                            <p>Ejercicio 2.1</p>
+                        </div>
                         <div class="superpuesto"></div>
-                        <h4>UD2. Manual README.md</h4>
+                        <h4>Doc Servidor Web</h4>
                     </a>
                 </article>
                 <article class="practica">
                     <iframe src="doc/251103ProtocoloInstalaciónServidorWebAMP-Relleno.pdf"></iframe>
                     <a href="doc/251103ProtocoloInstalaciónServidorWebAMP-Relleno.pdf" target="_blank">
-                        <img src="webroot/media/images/ies.png" alt="Banner">
+                        <div class="tituloPractica">
+                            <p>Tema 2</p>
+                            <p>Servidor web seguro</p>
+                            <p>Ejercicio 2.2</p>
+                        </div>
                         <div class="superpuesto"></div>
-                        <h4>UD2. Protocolo instalación</h4>
+                        <h4>Protocolo instalación</h4>
+                    </a>
+                </article>
+                <article class="practica">
+                    <iframe src="../GJLDWESLoginLogoffTema5/indexLoginLogoffTema5.php"></iframe>
+                    <a href="../GJLDWESLoginLogoffTema5/indexLoginLogoffTema5.php" target="_blank">
+                        <div class="tituloPractica">
+                            <p>Tema 3</p>
+                            <p>Aplicación web segura</p>
+                            <p>Ejercicio 3.1</p>
+                        </div>
+                        <div class="superpuesto"></div>
+                        <h4>LoginLogoffTema5</h4>
+                    </a>
+                </article>
+                <article class="practica">
+                    <iframe src="../GJLDWESLoginLogoff/indexLoginLogoff.php"></iframe>
+                    <a href="../GJLDWESLoginLogoff/indexLoginLogoff.php" target="_blank">
+                        <div class="tituloPractica">
+                            <p>Tema 3</p>
+                            <p>Aplicación web segura</p>
+                            <p>Ejercicio 3.2</p>
+                        </div>
+                        <div class="superpuesto"></div>
+                        <h4>LoginLogoff</h4>
+                    </a>
+                </article>
+                <article class="practica">
+                    <iframe src="doc/AdministraciónHosting.html"></iframe>
+                    <a href="doc/AdministraciónHosting.html" target="_blank">
+                        <div class="tituloPractica">
+                            <p>Tema 4</p>
+                            <p>Infraestructura web segura</p>
+                            <p>Ejercicio 4.1</p>
+                        </div>
+                        <div class="superpuesto"></div>
+                        <h4>Administración hosting</h4>
+                    </a>
+                </article>
+                <article class="practica">
+                    <iframe src="doc/PasoProduccion.html"></iframe>
+                    <a href="doc/PasoProduccion.html" target="_blank">
+                        <div class="tituloPractica">
+                            <p>Tema 4</p>
+                            <p>Infraestructura web segura</p>
+                            <p>Ejercicio 4.2</p>
+                        </div>
+                        <div class="superpuesto"></div>
+                        <h4>Paso a producción</h4>
                     </a>
                 </article>
             </div>
