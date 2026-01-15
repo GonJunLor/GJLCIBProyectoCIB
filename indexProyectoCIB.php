@@ -125,18 +125,26 @@
                         <h4>Paso a producción</h4>
                     </a>
                 </article>
+                <article class="practica">
+                    <iframe src="../GJLDWESLoginLogoffTema5/indexLoginLogoffTema5.php"></iframe>
+                    <a href="../GJLDWESLoginLogoffTema5/indexLoginLogoffTema5.php" target="_blank">
+                        <img src="webroot/media/images/ies.png" alt="Banner">
+                        <div class="superpuesto"></div>
+                        <h4>UD3. Aplicación web segura</h4>
+                    </a>
+                </article>
             </div>
         </section>
     </main>
     <footer id="pieEDD">
         <div>
             <a href="/feed/rss.xml" type="application/rss+xml" target="_blank"><i class="fa-solid fa-rss"></i></a>
-            <a href="https://github.com/GonJunLor/108EDDProyectoEDD" target="_blank">
+            <a href="https://github.com/GonJunLor/GJLCIBProyectoCIB.git" target="_blank">
                 <i class="fa-brands fa-github"></i>
             </a>
             <a href="https://mogutable.com/" target="_blank"><i class="fa-solid fa-house"></i></a>
             <a id="w3c" href="https://validator.w3.org/check?uri=https://daw108.ieslossauces.es/108EDDProyectoEDD/index.html" target="_blank">          
-                <img src="/webroot/media/images/W3C.png" alt="Validado por W3C" width="55" >        
+                <img src="webroot/media/images/W3C.png" alt="Validado por W3C" width="55" >        
             </a>
         </div>
         2024-25 IES LOS SAUCES. &#169;Todos los derechos reservados. 
