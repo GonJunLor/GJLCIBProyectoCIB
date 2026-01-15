@@ -3,6 +3,8 @@
     --colorFondo2: #f3f3f3;
     --colorFondo3: #bfc9cd;
     --colorFondo4: black;
+    --colorFondo5: rgb(253, 255, 253);
+    --colorFondo6: rgba(94, 28, 28, 0.8);
   
     --colorBorde: #c5c5c5;
     --radioBorde: 6px;
@@ -12,9 +14,11 @@
     --tamanoTexto: 16px;
     --fuenteTexto1: Sofia,sans-serif;
     --fuenteTexto2: Arial,sans-serif;
+    --fuenteTexto3: Mexico, serif;
+    --fuenteTexto4: Caslon, serif;
 
-    --anchoArticulo: 18vw;
-    --altoArticulo: 26vw;
+    --anchoArticulo: 18vh;
+    --altoArticulo: 26vh;
     --altoSuperpuesto: 20vw;
 
     /* Combinación de dimensiones para el iframe, funciona al 50% */
@@ -28,6 +32,7 @@
     padding: 0;
     margin: 0;
     font-family: var(--fuenteTexto2);
+    font-weight: bold;
 }
 
 /* Barra superior*/
