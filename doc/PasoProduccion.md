@@ -1,0 +1,82 @@
+# PASO A PRODUCCIÓN DE APLICACIÓN FINAL
+
+- [PASO A PRODUCCIÓN DE APLICACIÓN FINAL](#paso-a-producción-de-aplicación-final)
+  - [**Publicar desde GitHub**](#publicar-desde-github)
+  - [**Subir versión estable en github**](#subir-versión-estable-en-github)
+  - [**Bases de datos**](#bases-de-datos)
+  - [**Archivo de configuracion de conexión a BBDD**](#archivo-de-configuracion-de-conexión-a-bbdd)
+  - [**Fichero .htaccess**](#fichero-htaccess)
+
+## <h2>**Publicar desde GitHub**</h2>
+Lo primero es tener abierto nuestro repositorio en github porque vamos a copiar y configurar cosas.
+
+En plesk vamos a sitios web y dominios, entramos nuestro dominio principal y damos al icono de git.
+
+En github copiamos la url de ssh.
+
+En plesk añadimos repositorio, al pegar la url de github nos sale una sección para crear clave ssh pública, tenemos que crear una para cada repositorio, copiamos esa clave y vamos a github a las opciones de nuestro repostorio a deply keys. Una vez aquí añadimos una nueva clave pegando la que hemos copiado de plesk, poniendo un nombre significativo y dejando *Allow write access* desmarcado.
+
+Volvemos a plesk, modificamos el nombre del repositorio como queramos, nos aseguramos que el modo despliegue esta en automático. En ruta de acceso elegimos la carpeta de nuestro proyecto (si no la tenemos la creamos pero es recomendable que esté vacia) dentro de httpdocs. 
+
+Ya podemos dar a crear, esto clonará el repositorio de github a plesk.
+
+Si no ha habido errores volvemos a git en plesk y damos a configuración del repositorio en la tarjeta de nuestro proyecto (icono del medio abajo a la derecha). Al abrir vemos que hay un nuevo enlace, el url de webhook, el cual copiamos y vamos a github.
+
+En github entramos en settings/webhooks y damos a añadir webhook. Pegamos el url pero le añadimos plesk. al principio del dominio, elegimos application/json en content type, nos aseguramos que está marcada la opcion *Just the push event* y damos a añadir.
+
+Con todo esto cada vez que hagamos push a la rama principal se subirá automáticamente a plesk.
+
+## <h2>**Subir versión estable en github**</h2>
+Descargamos el proyecto comprimido en zip desde la sección de releases de github que previamente vamos haciendo con versiones estables de nuestro proyecto.
+
+Lo descomprimimos en nuestro pc y lo subimos al servidor por ftp, si es necesario borramos o modificamos archivos de configuración o lo que sea antes de subirlo.
+
+## <h2>**Bases de datos**</h2>
+
+Para trabajar con bases de datos lo hacemos en dos pasos, el primero será desde plesk donde crearemos la BBDD asociada a un dominio o proyecto y también crearemos el usuario para gestionarla. El segundo será desde phpMyAdmin donde ejecutaremos codigos sql para crear tablas, hacer carga inicial y borrarlas.
+
+**<h3>En plesk</h3>**
+En *sitios web y dominios* damos a *Bases de datos* y *añadir base de datos*.
+
+En la ventana que se abre elegimos el nombre de la BBDD, el sitio relacionado (este será un subdominio asociado a un proyecto que tenemos previamnete creado) y creamos un usuario con su contraseña.
+
+Una vez que le damos a crear ya nos aparece la opcion de abrir phpMyAdmin.
+
+**<h3>En phpMyAdmin</h3>**
+Aqui gestionamos únicamente la bbdd que creamos antes, no podemos ver todas las que hay en plesk. 
+
+Nos vamos a la pestaña SQL, copiamos o escribimos el código a ejecutar y antes de darle a continuar en la parte de abajo Guardamos esta consulta en favoritos poniéndole un nombre. 
+
+Al hacer ésto aparece una nueva sección abajo *Consulta guardada en favoritos* donde tenemos una lista desplegable con todas las que guardemos para poder seleccionarla en cualquier momento y darla a continuar abajo a la derecha para volver a ejecutarla.
+
+## <h2>**Archivo de configuracion de conexión a BBDD**</h2>
+Lo primero es crear unas variables de entorno con los datos de la conexión en el archivo .htaccess del proyecto donde sea necesario.
+````Bash
+SetEnv DB_DSN "mysql:host=localhost; dbname=DBGJLDWESProyectoTema4"
+SetEnv DB_USERNAME "userGJLDWESProyectoTema4"
+SetEnv DB_PASSWORD "5813Libro-Puro"
+````
+
+El objetivo con todo esto es que el archivo de configuración en explotación (rama master) no tenga la contraseñas, usuarios ni datos de la bbdd, a diferencia del entorno de explotación (rama developerGJL) que sí los tiene. Como el resto del código php es el mismo en los dos entornos, usa el mismo archivo (confDBPDO.php). 
+
+Antes de empezar guarda una copia de seguridad por si hay que volver a restaurar los archivos.
+
+Lo primero es añadirlo al archivo .gitignore (lo hacemos todo desde developerGJL y luego ya fusionamos con master).
+````Bash
+conf/confDBPDO.php
+```` 
+Después lo borramos del seguimiento de git (si quieremos asegurarnos más podemos borrarlo por completo sin usar --cached y luego volver a crearlo al final).
+````Bash
+git rm --cached conf/confDBPDO.php
+```` 
+
+En este punto ya no debería estar el archivo en github en ninguna rama, ahora tenemos que crearlo o modificarlo con los datos de conexión del entorno de desarrollo y hacer otra versión para subirla manualmente al entorno de explotación.
+
+## <h2>**Fichero .htaccess**</h2>
+````Bash
+
+# Redirección de errores a paginas personalizadas en carpeta error de raiz del dominio/subdominio
+ErrorDocument 404 /error/404.html
+ErrorDocument 403 /error/403.html
+ErrorDocument 500 /error/500.html
+````

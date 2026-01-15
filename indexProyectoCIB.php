@@ -32,25 +32,105 @@
                 <article class="practica">
                     <iframe src="doc/Glosario.pdf"></iframe>
                     <a href="doc/Glosario.pdf" target="_blank">
-                        <img src="webroot/media/images/ies.png" alt="Banner">
+                        <div class="tituloPractica">
+                            <p>Tema 1</p>
+                            <p>Ciberseguridad</p>
+                            <p>Ejercicio 1.1</p>
+                        </div>
                         <div class="superpuesto"></div>
-                        <h4>UD1. Glosario</h4>
+                        <h4>Glosario</h4>
+                    </a>
+                </article>
+                <article class="practica">
+                    <iframe src="doc/1.2 OWASP.pdf"></iframe>
+                    <a href="doc/1.2 OWASP.pdf" target="_blank">
+                        <div class="tituloPractica">
+                            <p>Tema 1</p>
+                            <p>Ciberseguridad</p>
+                            <p>Ejercicio 1.2</p>
+                        </div>
+                        <div class="superpuesto"></div>
+                        <h4>OWASP</h4>
                     </a>
                 </article>
                 <article class="practica">
                     <iframe src="doc/README.html"></iframe>
                     <a href="https://github.com/GonJunLor/GJLDAWProyectoDAW/blob/master/README.md" target="_blank">
-                        <img src="webroot/media/images/ies.png" alt="Banner">
+                        <div class="tituloPractica">
+                            <p>Tema 2</p>
+                            <p>Servidor web seguro</p>
+                            <p>Ejercicio 2.1</p>
+                        </div>
                         <div class="superpuesto"></div>
-                        <h4>UD2. Manual README.md</h4>
+                        <h4>Doc Servidor Web</h4>
                     </a>
                 </article>
                 <article class="practica">
                     <iframe src="doc/251103ProtocoloInstalaciónServidorWebAMP-Relleno.pdf"></iframe>
                     <a href="doc/251103ProtocoloInstalaciónServidorWebAMP-Relleno.pdf" target="_blank">
+                        <div class="tituloPractica">
+                            <p>Tema 2</p>
+                            <p>Servidor web seguro</p>
+                            <p>Ejercicio 2.2</p>
+                        </div>
+                        <div class="superpuesto"></div>
+                        <h4>Protocolo instalación</h4>
+                    </a>
+                </article>
+                <article class="practica">
+                    <iframe src="../GJLDWESLoginLogoffTema5/indexLoginLogoffTema5.php"></iframe>
+                    <a href="../GJLDWESLoginLogoffTema5/indexLoginLogoffTema5.php" target="_blank">
+                        <div class="tituloPractica">
+                            <p>Tema 3</p>
+                            <p>Aplicación web segura</p>
+                            <p>Ejercicio 3.1</p>
+                        </div>
+                        <div class="superpuesto"></div>
+                        <h4>LoginLogoffTema5</h4>
+                    </a>
+                </article>
+                <article class="practica">
+                    <iframe src="../GJLDWESLoginLogoff/indexLoginLogoff.php"></iframe>
+                    <a href="../GJLDWESLoginLogoff/indexLoginLogoff.php" target="_blank">
+                        <div class="tituloPractica">
+                            <p>Tema 3</p>
+                            <p>Aplicación web segura</p>
+                            <p>Ejercicio 3.2</p>
+                        </div>
+                        <div class="superpuesto"></div>
+                        <h4>LoginLogoff</h4>
+                    </a>
+                </article>
+                <article class="practica">
+                    <iframe src="doc/AdministraciónHosting.html"></iframe>
+                    <a href="doc/AdministraciónHosting.html" target="_blank">
+                        <div class="tituloPractica">
+                            <p>Tema 4</p>
+                            <p>Infraestructura web segura</p>
+                            <p>Ejercicio 4.1</p>
+                        </div>
+                        <div class="superpuesto"></div>
+                        <h4>Administración hosting</h4>
+                    </a>
+                </article>
+                <article class="practica">
+                    <iframe src="doc/PasoProduccion.html"></iframe>
+                    <a href="doc/PasoProduccion.html" target="_blank">
+                        <div class="tituloPractica">
+                            <p>Tema 4</p>
+                            <p>Infraestructura web segura</p>
+                            <p>Ejercicio 4.2</p>
+                        </div>
+                        <div class="superpuesto"></div>
+                        <h4>Paso a producción</h4>
+                    </a>
+                </article>
+                <article class="practica">
+                    <iframe src="../GJLDWESLoginLogoffTema5/indexLoginLogoffTema5.php"></iframe>
+                    <a href="../GJLDWESLoginLogoffTema5/indexLoginLogoffTema5.php" target="_blank">
                         <img src="webroot/media/images/ies.png" alt="Banner">
                         <div class="superpuesto"></div>
-                        <h4>UD2. Protocolo instalación</h4>
+                        <h4>UD3. Aplicación web segura</h4>
                     </a>
                 </article>
             </div>
@@ -59,12 +139,12 @@
     <footer id="pieEDD">
         <div>
             <a href="/feed/rss.xml" type="application/rss+xml" target="_blank"><i class="fa-solid fa-rss"></i></a>
-            <a href="https://github.com/GonJunLor/108EDDProyectoEDD" target="_blank">
+            <a href="https://github.com/GonJunLor/GJLCIBProyectoCIB.git" target="_blank">
                 <i class="fa-brands fa-github"></i>
             </a>
             <a href="https://mogutable.com/" target="_blank"><i class="fa-solid fa-house"></i></a>
             <a id="w3c" href="https://validator.w3.org/check?uri=https://daw108.ieslossauces.es/108EDDProyectoEDD/index.html" target="_blank">          
-                <img src="/webroot/media/images/W3C.png" alt="Validado por W3C" width="55" >        
+                <img src="webroot/media/images/W3C.png" alt="Validado por W3C" width="55" >        
             </a>
         </div>
         2024-25 IES LOS SAUCES. &#169;Todos los derechos reservados. 

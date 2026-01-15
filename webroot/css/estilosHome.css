@@ -106,30 +106,60 @@ article{
     align-items: center;
     margin: 3px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
 }
 article>a{
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
+    justify-content: space-around;
     text-decoration: none;
     color: var(--colorTexto);
     text-align: center;
     font-weight: bolder;
+    height: 100%;
 }
 article>a>img{
     width: var(--anchoArticulo);
     margin-bottom: 2em;
 }
+.tituloPractica{
+    width: 96%;
+    height: 80%;
+    margin: 0 2%;
+    background-color: var(--colorFondo2);
+    border: 1px solid var(--colorFondo3);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: var(--colorFondo6);
+}
+
+.tituloPractica p:first-child{
+    font-size: 2rem;
+    font-family: var(--fuenteTexto1);
+    font-style: italic;
+}
+.tituloPractica p:nth-of-type(2){
+    font-size: 0.8rem;
+    font-family: var(--fuenteTexto4);
+    font-style: italic;
+}
 .practica { 
     position: relative; 
     display: inline-block; 
 } 
+.practica h4{
+    font-size: 0.8em;
+}
 .practica iframe { 
     display: none; 
     position: absolute; 
     top: 0; 
     left: 0%; 
     width: var(--anchoIframe); 
-    height: var(--altoIframe); 
+    /* height: var(--altoIframe);  */
+    height: 100%;
     z-index: 10;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
@@ -146,7 +176,7 @@ article>a>img{
     top: 0; 
     left: 0%;
     width: var(--anchoArticulo);
-    height: var(--altoSuperpuesto);
+    height: var(--altoArticulo);
     z-index: 200; 
 }
 .subtitulo {
