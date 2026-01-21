@@ -4,6 +4,8 @@
   - [**Conexión por sftp y ssh**](#conexión-por-sftp-y-ssh)
   - [**Crear un subdominio**](#crear-un-subdominio)
 
+>Como contratamos el servidor (IONOS), como se instala y ejecuta plesk, que podemos y no podemos hacer en plesk. 
+
 ## <h2>**Conexión por sftp y ssh**</h2>
 
 **<h3>SFTP</h3>**
