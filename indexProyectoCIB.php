@@ -54,6 +54,18 @@
                     </a>
                 </article>
                 <article class="practica">
+                    <iframe src="doc/1.2 OWASP-Presentacion.pdf"></iframe>
+                    <a href="doc/1.2 OWASP-Presentacion.pdf" target="_blank">
+                        <div class="tituloPractica">
+                            <p>OWASP Presentación</p>
+                            <p>Ciberseguridad</p>
+                            <!-- <p>Ejercicio 1.2</p> -->
+                        </div>
+                        <div class="superpuesto"></div>
+                        <h4>Tema 1</h4>
+                    </a>
+                </article>
+                <article class="practica">
                     <iframe src="doc/README.html"></iframe>
                     <a href="https://github.com/GonJunLor/GJLDAWProyectoDAW/blob/master/README.md" target="_blank">
                         <div class="tituloPractica">
@@ -102,24 +114,12 @@
                     </a>
                 </article>
                 <article class="practica">
-                    <iframe src="doc/AdministraciónHosting.html"></iframe>
-                    <a href="doc/AdministraciónHosting.html" target="_blank">
+                    <iframe src="doc/EntornoProduccion.html"></iframe>
+                    <a href="doc/EntornoProduccion.html" target="_blank">
                         <div class="tituloPractica">
-                            <p>Administración hosting</p>
+                            <p>Entorno Producción</p>
                             <p>Infraestructura web segura</p>
                             <!-- <p>Ejercicio 4.1</p> -->
-                        </div>
-                        <div class="superpuesto"></div>
-                        <h4>Tema 4</h4>
-                    </a>
-                </article>
-                <article class="practica">
-                    <iframe src="doc/PasoProduccion.html"></iframe>
-                    <a href="doc/PasoProduccion.html" target="_blank">
-                        <div class="tituloPractica">
-                            <p>Paso a producción</p>
-                            <p>Infraestructura web segura</p>
-                            <!-- <p>Ejercicio 4.2</p> -->
                         </div>
                         <div class="superpuesto"></div>
                         <h4>Tema 4</h4>
