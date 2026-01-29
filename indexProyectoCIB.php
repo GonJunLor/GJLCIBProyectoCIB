@@ -42,8 +42,8 @@
                     </a>
                 </article>
                 <article class="practica">
-                    <iframe src="doc/1.2 OWASP.pdf"></iframe>
-                    <a href="doc/1.2 OWASP.pdf" target="_blank">
+                    <iframe src="doc/OWASP.pdf"></iframe>
+                    <a href="doc/OWASP.pdf" target="_blank">
                         <div class="tituloPractica">
                             <p>OWASP</p>
                             <p>Ciberseguridad</p>
@@ -54,8 +54,8 @@
                     </a>
                 </article>
                 <article class="practica">
-                    <iframe src="doc/1.2 OWASP-Presentacion.pdf"></iframe>
-                    <a href="doc/1.2 OWASP-Presentacion.pdf" target="_blank">
+                    <iframe src="doc/OWASP-Presentacion.pdf"></iframe>
+                    <a href="doc/OWASP-Presentacion.pdf" target="_blank">
                         <div class="tituloPractica">
                             <p>OWASP Presentación</p>
                             <p>Ciberseguridad</p>
