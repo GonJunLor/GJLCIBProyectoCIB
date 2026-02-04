@@ -117,7 +117,7 @@
                     <iframe src="doc/EntornoProduccion.html"></iframe>
                     <a href="doc/EntornoProduccion.html" target="_blank">
                         <div class="tituloPractica">
-                            <p>Entorno Producción</p>
+                            <p>Entorno Producción - AMP</p>
                             <p>Infraestructura web segura</p>
                             <!-- <p>Ejercicio 4.1</p> -->
                         </div>
